@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Road Rage';
+  src: url('./assets/fonts/Road_Rage.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-white font-sans overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-street uppercase;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF0033;
+}
